@@ -1,0 +1,14 @@
+@import '../general/mixins';
+
+.layed__container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 28vh;
+  width: 90vh;
+}
+
+.layed-unit__container {
+  @include baseUnitStyle;
+  @include colorUnitStyle;
+}

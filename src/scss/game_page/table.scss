@@ -1,0 +1,11 @@
+.table__container{
+  display: flex;
+  width:100vw;
+  height:100vh;
+  background: #967d68;
+
+  .player-section__container{
+    display: flex;
+    flex-direction: column;
+  }
+}

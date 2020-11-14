@@ -1,0 +1,8 @@
+@import '../general/mixins';
+
+.thrown-out-unit__container{
+  @include baseUnitStyle;
+  @include colorUnitStyle;
+  height:10vh;
+  width:5vh;
+}

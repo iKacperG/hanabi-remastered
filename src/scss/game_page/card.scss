@@ -1,0 +1,15 @@
+@import '../general/mixins';
+
+.player-hand__container {
+  width: 100vh;
+  height: 28vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+.player-card__container {
+  @include unseenCard;
+  @include colorUnitStyle;
+}

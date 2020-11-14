@@ -1,0 +1,54 @@
+@mixin baseUnitStyle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:16vh;
+  height:20vh;
+  background: #4f4444;
+}
+
+@mixin unseenCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16vh;
+  height: 20vh;
+  background: #4f4444;
+  border: 0.5rem solid rgba(41, 11, 16, 1);
+  font-family: $font-primary;
+  font-size: 4rem;
+}
+
+@mixin colorUnitStyle{
+  &--red{
+    background:$color-card-red;
+    border:0.5rem solid $color-card-border-red;
+  }
+  &--yellow{
+    background:$color-card-yellow;
+    border:0.5rem solid $color-card-border-yellow;
+  }
+  &--green{
+    background:$color-card-green;
+    border:0.5rem solid $color-card-border-green;
+  }
+  &--blue{
+    background:$color-card-blue;
+    border:0.5rem solid $color-card-border-blue;
+  }
+  &--white{
+    background:$color-card-white;
+    border:0.5rem solid $color-card-border-white;
+  }
+}
+
+@mixin baseTokenStyle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius:50%;
+  width:6rem;
+  height:6rem;
+  font-family:$font-primary;
+  font-size: 2rem;
+}

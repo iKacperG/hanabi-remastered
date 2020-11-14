@@ -1,0 +1,7 @@
+@import '../general/mixins';
+
+.clue-pile__container{
+  @include baseTokenStyle;
+  background: #00b3ff;
+  border:1rem solid darkblue;
+}

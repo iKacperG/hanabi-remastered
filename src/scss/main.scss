@@ -1,0 +1,17 @@
+@import './general/reset';
+@import '../fonts/Generated_Fonts/fonts';
+@import './general/variables.scss';
+@import './general/mixins';
+
+@import './landing_page/header_section';
+@import './landing_page/main_section';
+
+
+@import './game_page/table';
+@import './game_page/cards_section';
+@import './game_page/draw_pile';
+@import './game_page/layed';
+@import './game_page/card';
+@import './game_page/clue_pile';
+@import './game_page/fail_pile';
+@import './game_page/thrown_out';

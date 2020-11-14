@@ -1,0 +1,8 @@
+@import '../general/mixins';
+
+.fail-pile__container{
+  @include baseTokenStyle;
+  background: #a02525;
+  border:1rem solid #3e0303;
+
+}

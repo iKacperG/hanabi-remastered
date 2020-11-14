@@ -1,0 +1,25 @@
+@import '../general/mixins';
+
+
+.draw-pile__container {
+ @include unseenCard;
+  font-size: 3rem;
+  color:$color-card-white;
+
+  &--full {
+    box-shadow: inset -1rem -1rem 0px -6px rgba(41, 11, 16, 1);
+  }
+
+  &--middle {
+    box-shadow: inset -0.7rem -0.7rem 0px -6px rgba(41, 11, 16, 1);
+  }
+
+  &--low {
+    box-shadow: inset -0.5rem -0.5rem 0px -6px rgba(41, 11, 16, 1);
+  }
+
+  &--none {
+    background: none;
+    box-shadow: none;
+  }
+}
