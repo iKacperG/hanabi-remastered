@@ -8,6 +8,7 @@ const DrawPile = () => {
 
 
 useEffect(()=>{
+
     drawPileStatusChanger(cardsLeft,setDrawPileStatus);
 },[cardsLeft])
 

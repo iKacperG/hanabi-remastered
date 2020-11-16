@@ -4,20 +4,30 @@ import {OrderContext} from "../../providers/CardsLeftContext";
 import {cardDrawer} from "./single_resp_functions/cardDrawer";
 import Card from "./Card";
 
-const PlayerHand = ({player,order,hand,isYou}) => {
-    const [actualHand,setActualHand] = useState(hand)
+const PlayerHand = ({player}) => {
+    const [actualHand,setActualHand] = useState(player.hand)
     const {actualOrder, setActualOrder} = useContext(OrderContext)
     const {cardsLeft, setCardsLeft} = useContext(CardsLeftContext)
 
-    cardDrawer(actualHand,cardsLeft)
+    // cardDrawer(actualHand, cardsLeft, setCardsLeft)
+
+
+    console.log(actualHand);
+console.log(player.name)
+
+
     return (
         <>
             <div className='player-hand__container'>
-                {hand?.map((card) => {
-                    return <Card card={card} isYou={isYou}/>
+                {actualHand?.map((card,i,hand) => {
+                    return <Card card={card} isYou={player.isYou} hand={hand} setActualHand={setActualHand}/>
                 })}
             </div>
-            <h3>{player}</h3>
+            <button onClick={()=>{
+                cardDrawer(actualHand,setActualHand,cardsLeft,setCardsLeft)
+            }}>draw</button>
+
+            <h3>{player.name}</h3>
 
         </>
     )

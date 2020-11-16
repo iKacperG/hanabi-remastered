@@ -10,7 +10,6 @@ const CardsLeftProvider = (props) => {
     },[cardsToSort])
 
 
-
     let cardsSorter = () => {
         setCardsLeft(cardsToSort.sort(func));
 
