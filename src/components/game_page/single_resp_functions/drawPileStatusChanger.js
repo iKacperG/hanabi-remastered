@@ -4,7 +4,4 @@ export const drawPileStatusChanger = (cardsLeft,setDrawPileStatus) => {
     if(cardsLeft <=25){setDrawPileStatus('middle'); return 'middle'}
     if(cardsLeft >25) return 'full'
 
-
-
-
 }

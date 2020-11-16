@@ -1,15 +1,11 @@
 import React from 'react';
+import {playCard} from "./single_resp_functions/playCard";
 
 const Card = ({card, isYou,hand,setActualHand}) => {
     if(isYou){
         return (
-            <div onClick={()=>{
-                hand.slice(hand.indexOf(card),1)
-                setActualHand([...hand].filter((el)=>{
-                    return el!==card
-                }))
-            }} className={`player-card__container player-card__container--none`}/>
-
+            <div  className={`player-card__container player-card__container--none`}
+                  onClick={()=>playCard(hand,setActualHand,card)}/>
         )
     }
 
